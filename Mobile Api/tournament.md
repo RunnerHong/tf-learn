@@ -1,6 +1,9 @@
 ## tournament api
 -----------------------------------------------------------------------------------------------------------------------
+[test](#filter_match)
 ### List open tournaments:
+
+```json
 {
     "data": [
         {
@@ -78,7 +81,7 @@
         }
     ]
 }
-
+```
 -----------------------------------------------------------------------------------------------------------------------
 ### List ranking tournaments:
 {
@@ -159,6 +162,8 @@
 
 -----------------------------------------------------------------------------------------------------------------------
 ### List battling tournaments:
+
+```json
 {
     "data": [
         {
@@ -242,122 +247,120 @@
         }
     ]
 }
-
+```
 -----------------------------------------------------------------------------------------------------------------------
 ### List winners/champions:
 
+```json
 {
-    "data": [
-        {
-            "entry": {　//参赛作品
-                "final_ranked_position": 11,
-                "get_place": 1,
-                "has_won": true,
-                "title": "MY NAME IS JAIVY GEDORIO #CHANNELFIXISAWESOME",
-                "when_isoformat": "2017-08-17T10:09:00.590987+00:00",
-                "video": {　//视频
-                    "outputs_status": "live",
-                    "title": "Call To Action",
-                    "extension_bitrate_urls": {
-                        "mpeg4": {
-                            "360": "http://channelfix-static.s3.amazonaws.com/video/enc/4qLPAbQCXsjmVFqBWRehKD-360.mp4",
-                            "720": "http://channelfix-static.s3.amazonaws.com/video/enc/4qLPAbQCXsjmVFqBWRehKD-720.mp4"
-                        },
-                        "webm": {
-                            "360": "http://channelfix-static.s3.amazonaws.com/video/enc/4qLPAbQCXsjmVFqBWRehKD-360.webm",
-                            "720": "http://channelfix-static.s3.amazonaws.com/video/enc/4qLPAbQCXsjmVFqBWRehKD-720.webm"
-                        }
-                    },
-                    "filmstrip_url": "https://s3-ap-southeast-1.amazonaws.com/channelfix-static/video/thumbs/16374-merged.jpg",
-                    "slug": "call-to-actionmZ",
-                    "thumbnail_url": "https://s3-ap-southeast-1.amazonaws.com/channelfix-static/video/thumbs/4qLPAbQCXsjmVFqBWRehKD-360_0002.jpg",
-                    "id": 16374
+    "entry": {　//参赛作品
+        "final_ranked_position": 11,
+        "get_place": 1,
+        "has_won": true,
+        "title": "MY NAME IS JAIVY GEDORIO #CHANNELFIXISAWESOME",
+        "when_isoformat": "2017-08-17T10:09:00.590987+00:00",
+        "video": {　//视频
+            "outputs_status": "live",
+            "title": "Call To Action",
+            "extension_bitrate_urls": {
+                "mpeg4": {
+                    "360": "http://channelfix-static.s3.amazonaws.com/video/enc/4qLPAbQCXsjmVFqBWRehKD-360.mp4",
+                    "720": "http://channelfix-static.s3.amazonaws.com/video/enc/4qLPAbQCXsjmVFqBWRehKD-720.mp4"
                 },
-                "image_urls": {
-                    "360": "https://s3-ap-southeast-1.amazonaws.com/channelfix-static/video/thumbs/aRV4wxsH9pUs4CF2ZBqvHd-360_0002.jpg",
-                    "720": "https://s3-ap-southeast-1.amazonaws.com/channelfix-static/video/thumbs/aRV4wxsH9pUs4CF2ZBqvHd-720_0002.jpg"
-                },
-                "id": 42983,
-                "has_lost": false,
-                "place": 1,
-                "place_ordinal": "1st",
-                "owner": {//视频作者
-                    "username": "tR8Hud4ehP5FXy3yhEkUc6",
-                    "profile": {
-                        "rank_label": "#5",
-                        "display_name": "JAIVYGEDORIO",　//昵称
-                        "level": 10,
-                        "country": {
-                            "code": "PH",
-                            "name": "Philippines"
-                        },
-                        "group_list": [
-                            "Broadcasters",
-                            "SMS Verified"
-                        ],
-                        "followers_count": 605,
-                        "avatar_url": "http://channelfix-static.s3.amazonaws.com/avatars/sJYJUnRGuBKk9LQZEasR2Y.jpeg",
-                        "full_name": "JAIVY GEDORIO",
-                        "profile_url": "/profile/tR8Hud4ehP5FXy3yhEkUc6/"
-                    },
-                    "is_staff": false,
-                    "is_active": true,
-                    "id": 176270
-                },
-                "approval": 3,
-                "get_approval": "Accepted",
-                "entry_url": "/battle/miss-channelfix-august-channelfix/",
-                "slug": "my-name-is-jaivy-gedorio"
+                "webm": {
+                    "360": "http://channelfix-static.s3.amazonaws.com/video/enc/4qLPAbQCXsjmVFqBWRehKD-360.webm",
+                    "720": "http://channelfix-static.s3.amazonaws.com/video/enc/4qLPAbQCXsjmVFqBWRehKD-720.webm"
+                }
             },
-            "tournament": "Miss ChannelFix August #ChannelFix", //标题
-            "place": 1,
-            "prize": {
-                "product": {
-                    "delivery": 0,
-                    "delivery_days": 0,
-                    "description": "1st Place - $300 - Miss ChannelFix August",
-                    "is_shipped": false,
-                    "title": "1st Place - $300 - Miss ChannelFix August",
-                    "when_verbose": "Mon, 24 Jul 2017 22:02:35 -0000",
-                    "image_urls": {
-                        "360": "http://channelfix-static.s3.amazonaws.com/product_images/Sw5z9tX73J3nPcnzHsLp8T.jpeg",
-                        "720": "http://channelfix-static.s3.amazonaws.com/product_images/Sw5z9tX73J3nPcnzHsLp8T.jpeg"
-                    },
-                    "product_url": "/product/1st-place-300-miss-channelfix-august/",
-                    "cost_tokens": 300,　//赢得
-                    "sponsored": false,
-                    "admin_fulfilled": true,
-                    "owner": {
-                        "username": "ez3vuc2DUcCfqL3YUg7BmX",
-                        "profile": {
-                            "rank_label": "",
-                            "display_name": "InsideChannelfix(CF)",
-                            "level": 10,
-                            "country": {
-                                "code": "PH",
-                                "name": "Philippines"
-                            },
-                            "group_list": [
-                                "Broadcasters",
-                                "SMS Verified"
-                            ],
-                            "followers_count": 3276,
-                            "avatar_url": "http://channelfix-static.s3.amazonaws.com/avatars/logo.jpeg",
-                            "full_name": "Inside Channelfix (CF)",
-                            "profile_url": "/InsideChannelFix/"
-                        },
-                        "is_staff": true,
-                        "is_active": true,
-                        "id": 55
-                    },
-                    "video": null,
-                    "id": 908
+            "filmstrip_url": "https://s3-ap-southeast-1.amazonaws.com/channelfix-static/video/thumbs/16374-merged.jpg",
+            "slug": "call-to-actionmZ",
+            "thumbnail_url": "https://s3-ap-southeast-1.amazonaws.com/channelfix-static/video/thumbs/4qLPAbQCXsjmVFqBWRehKD-360_0002.jpg",
+            "id": 16374
+        },
+        "image_urls": {
+            "360": "https://s3-ap-southeast-1.amazonaws.com/channelfix-static/video/thumbs/aRV4wxsH9pUs4CF2ZBqvHd-360_0002.jpg",
+            "720": "https://s3-ap-southeast-1.amazonaws.com/channelfix-static/video/thumbs/aRV4wxsH9pUs4CF2ZBqvHd-720_0002.jpg"
+        },
+        "id": 42983,
+        "has_lost": false,
+        "place": 1,
+        "place_ordinal": "1st",
+        "owner": {//视频作者
+            "username": "tR8Hud4ehP5FXy3yhEkUc6",
+            "profile": {
+                "rank_label": "#5",
+                "display_name": "JAIVYGEDORIO",　//昵称
+                "level": 10,
+                "country": {
+                    "code": "PH",
+                    "name": "Philippines"
                 },
-                "place": 1
-            }
-        }
-    ]
+                "group_list": [
+                    "Broadcasters",
+                    "SMS Verified"
+                ],
+                "followers_count": 605,
+                "avatar_url": "http://channelfix-static.s3.amazonaws.com/avatars/sJYJUnRGuBKk9LQZEasR2Y.jpeg",
+                "full_name": "JAIVY GEDORIO",
+                "profile_url": "/profile/tR8Hud4ehP5FXy3yhEkUc6/"
+            },
+            "is_staff": false,
+            "is_active": true,
+            "id": 176270
+        },
+        "approval": 3,
+        "get_approval": "Accepted",
+        "entry_url": "/battle/miss-channelfix-august-channelfix/",
+        "slug": "my-name-is-jaivy-gedorio"
+    },
+    "tournament": "Miss ChannelFix August #ChannelFix", //标题
+    "place": 1,
+    "prize": {
+        "product": {
+            "delivery": 0,
+            "delivery_days": 0,
+            "description": "1st Place - $300 - Miss ChannelFix August",
+            "is_shipped": false,
+            "title": "1st Place - $300 - Miss ChannelFix August",
+            "when_verbose": "Mon, 24 Jul 2017 22:02:35 -0000",
+            "image_urls": {
+                "360": "http://channelfix-static.s3.amazonaws.com/product_images/Sw5z9tX73J3nPcnzHsLp8T.jpeg",
+                "720": "http://channelfix-static.s3.amazonaws.com/product_images/Sw5z9tX73J3nPcnzHsLp8T.jpeg"
+            },
+            "product_url": "/product/1st-place-300-miss-channelfix-august/",
+            "cost_tokens": 300,　//赢得
+            "sponsored": false,
+            "admin_fulfilled": true,
+            "owner": {
+                "username": "ez3vuc2DUcCfqL3YUg7BmX",
+                "profile": {
+                    "rank_label": "",
+                    "display_name": "InsideChannelfix(CF)",
+                    "level": 10,
+                    "country": {
+                        "code": "PH",
+                        "name": "Philippines"
+                    },
+                    "group_list": [
+                        "Broadcasters",
+                        "SMS Verified"
+                    ],
+                    "followers_count": 3276,
+                    "avatar_url": "http://channelfix-static.s3.amazonaws.com/avatars/logo.jpeg",
+                    "full_name": "Inside Channelfix (CF)",
+                    "profile_url": "/InsideChannelFix/"
+                },
+                "is_staff": true,
+                "is_active": true,
+                "id": 55
+            },
+            "video": null,
+            "id": 908
+        },
+        "place": 1
+    }
 }
+```
 
 -----------------------------------------------------------------------------------------------------------------------
 ### List finished tournament:
@@ -572,7 +575,7 @@
 }
 
 ------------------------------------------------------------------------------------------------------------------------------------------
-### Show Match Battle:
+### <span id = "filter_match">Show Match Battle<span>:
 
 ```
 {　　　//对决
